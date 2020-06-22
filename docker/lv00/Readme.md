@@ -175,7 +175,7 @@ e33151e2ebb2
 ```
 $ docker kill
 ```
-This command kills the container by stopping its execution immediately. The difference between ```docker kill``` and ```docker stop``` is that ‘docker stop’ gives the container time to shutdown gracefully, in situations when it is taking too much time for getting the container to stop, one can opt to kill it . <br/>
+This command kills the container by stopping its execution immediately. The difference between ```docker kill``` and ```docker stop``` is that ```docker stop``` gives the container time to shutdown gracefully, in situations when it is taking too much time for getting the container to stop, one can opt to kill it . <br/>
 Example :
 ```
 $ docker stop e33151e2ebb2
