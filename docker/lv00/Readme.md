@@ -94,7 +94,7 @@ docker.io/library/hello-world:latest
 
 - docker run
 ```
-$ docker run <br/>
+$ docker run 
 Usage: docker run -it -d <image name>
 ```
 This command is used to create a container from an image . <br/>
@@ -145,7 +145,7 @@ e33151e2ebb2        ubuntu               "/bin/bash"        9 minutes ago       
 - docker exec
 
 ```
-$ docker exec <br/>
+$ docker exec 
 Usage: docker exec -it <container id> bash
 ```
 This command is used to access the running container . <br/>
@@ -159,7 +159,7 @@ root@e33151e2ebb2:/#
 - docker stop
 
 ```
-$ docker stop <br/>
+$ docker stop 
 Usage: docker stop <container id>
 ```
 This command stops a running container . <br/>
@@ -175,7 +175,7 @@ e33151e2ebb2
 ```
 $ docker kill
 ```
-This command kills the container by stopping its execution immediately. The difference between ‘docker kill’ and ‘docker stop’ is that ‘docker stop’ gives the container time to shutdown gracefully, in situations when it is taking too much time for getting the container to stop, one can opt to kill it . <br/>
+This command kills the container by stopping its execution immediately. The difference between ```docker kill``` and ```docker stop``` is that ‘docker stop’ gives the container time to shutdown gracefully, in situations when it is taking too much time for getting the container to stop, one can opt to kill it . <br/>
 Example :
 ```
 $ docker stop e33151e2ebb2
@@ -185,7 +185,7 @@ e33151e2ebb2
 
 - docker commit
 ```
-$ docker commit <br/>
+$ docker commit 
 Usage: docker commit <conatainer id> <username/imagename>
 ```
 This command creates a new image of an edited container on the local system . <br/>
@@ -214,7 +214,7 @@ Login Succeeded
 - docker push
 
 ```
-$ docker push <br/>
+$ docker push 
 Usage: docker push <username/image name>
 ```
 This command is used to push an image to the docker hub repository . <br/>
@@ -243,7 +243,7 @@ ubuntu               latest         1d622ef86b13        7 weeks ago         73.9
 - docker rm
 
 ```
-$ docker rm <br/>
+$ docker rm 
 Usage: docker rm <container id>
 ```
 This command is used to delete a stopped container . <br/>
@@ -266,7 +266,7 @@ This command is used to delete an image from local storage . <br/>
 Example :
 ```
 $ docker rmi 1d16c270f29f
-Untagged: shruti/ubuntu:latest
+Untagged: user4/ubuntu:latest
 Deleted: sha256:1d16c270f29fc152eec2194a8c57949f1cafcc264ce2bec63bff6942cd3c0ec8
 ```
 <br/>
@@ -274,7 +274,7 @@ Deleted: sha256:1d16c270f29fc152eec2194a8c57949f1cafcc264ce2bec63bff6942cd3c0ec8
 - docker build
 
 ```
-$ docker build <br/>
+$ docker build 
 Usage: docker build <path to docker file>
 ```
 This command is used to build an image from a specified docker file . <br/>
@@ -295,7 +295,7 @@ Example :
 ```
 $ docker tag ubuntu user4/ubuntu
 
-For checking , Use ```docker images ```
+For checking , Use  "docker images" 
 REPOSITORY             TAG            IMAGE ID            CREATED             SIZE
 user4/ubuntu          latest         1d622ef86b13        7 weeks ago         73.9MB
 ```
